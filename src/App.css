@@ -1,0 +1,48 @@
+.verification-code-wrapper {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.verification-code-container {
+  width: 100% !important;
+  text-align: center;
+}
+
+.verification-code-wrapper .verification-code-container input {
+  border-radius: 10px;
+  margin-left: 15px;
+  border-right: solid 1px #a8adb7;
+  font-size: 25px;
+}
+
+.verification-code-wrapper .verification-code-container input:focus {
+  border-right: solid 1px #006fff;
+  border-left: solid 1px #006fff;
+}
+
+.verification-code-wrapper .verification-code-container input:focus + input {
+  border-left: solid 1px #a8adb7;
+}
+
+.verification-submit {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.btn-submit {
+  width: 300px;
+  height: 70px;
+  background: #13074a;
+  color: white;
+  border: #13074a;
+  border-radius: 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.verification-error {
+  margin-top: 20px;
+  color: red;
+}
