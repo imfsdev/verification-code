@@ -16,7 +16,7 @@ app.post("/", (req, res) => {
   const { code } = req.body;
   if (code.length !== 6 || code.slice(-1) === "7") {
     return res.status(404).json({
-      message: "Verification Failed!"
+      message: "Verification Error"
     });
   } else {
     return res.send({ success: true });
